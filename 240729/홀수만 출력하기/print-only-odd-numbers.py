@@ -1,3 +1,6 @@
-n = input()
+n = int(input())
 
-list_n = n.split()
+for i in range(n):
+    n = int(input())
+    if n % 2 == 1 and n % 3 == 0:
+        print(n)
