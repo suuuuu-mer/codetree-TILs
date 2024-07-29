@@ -2,11 +2,11 @@ n = int(input())
 
 satisfied = True
 
-for i in range (1, n + 1):
-    if i * n == n:
+for i in range (2, n):
+    if n % i == 0:
         satisfied = False
 
 if satisfied == False:
-    print("P")
-else:
     print("C")
+else:
+    print("P")
