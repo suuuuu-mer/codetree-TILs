@@ -1,14 +1,12 @@
-satisfied = False
+satisfied = True
 
 for i in range(5):
-    n = int(input())
-    
-    if n % 3 == 0:
-        continue
-    else:
-        satisfied = True
+    a = int(input())
+
+    if a % 3 != 0:
+        satisfied = False
 
 if satisfied == True:
-    print(0)
-else:
     print(1)
+else:
+    print(0)
