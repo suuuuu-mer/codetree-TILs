@@ -23,4 +23,8 @@ if cat_a == "Y" and tem_a >= 37:
         else:
             print("N")
 else:
-    print("N")
+    if cat_b == "Y" and tem_b >= 37:
+         if cat_c == "Y" and tem_c >= 37:
+            print("E")
+    else:
+        print("N")
