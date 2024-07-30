@@ -7,7 +7,7 @@ sum_val = 0
 for i in range(n):
     sum_val += float(list_sub[i])
 
-avr = sum_val / 4
+avr = sum_val / n
 
 print(f"{avr:.1f}")
 
