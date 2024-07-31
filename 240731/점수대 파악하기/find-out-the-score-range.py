@@ -3,8 +3,8 @@ num = list(map(int, input().split()))
 count = [0] * 11
 
 for i in range(len(num)):
-    if (num[i] // 10) < 0:
-        continue
+    if num[i] == 0:
+        break
     else:
         count[num[i] // 10] += 1
 
