@@ -7,13 +7,8 @@ count = [0] * 10
 
 
 while a > 1:
-    if a // b > 0:
-        count[(a % b)] += 1
-        a = a // b
-
-    elif a // b == 0:
-        count[(a % b)] += 1
-        break
+    count[(a % b)] += 1
+    a //= b
 
 sum_val = 0
 
