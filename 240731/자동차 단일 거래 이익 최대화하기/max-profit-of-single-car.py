@@ -15,7 +15,7 @@ for j in num[num.index(min_val):]:
         break
 
 
-if max_val == num[0]:
+if max_val == 0 :
     print(0)
 else:
     print(max_val - min_val)
