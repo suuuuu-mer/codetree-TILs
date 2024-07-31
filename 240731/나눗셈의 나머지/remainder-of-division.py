@@ -6,7 +6,7 @@ b = int(n[1])
 count = [0] * 10
 
 
-while True:
+while a > 1:
     if a // b > 0:
         count[(a % b)] += 1
         a = a // b
