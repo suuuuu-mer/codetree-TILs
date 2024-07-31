@@ -16,3 +16,4 @@ for i in range(q):
     elif lists[0] == 3:
         for j in range(lists[1]-1, lists[2]):
             print(list_one[j], end = " ")
+        print()
