@@ -1,10 +1,8 @@
 n = list(map(int, input().split()))
 
-filtered_n = n[::2]
-
 sum_n = 0
 
-for i in filtered_n:
+for i in range(1, 10, 2):
     sum_n += n[i]
 
 sum_j = 0
