@@ -2,4 +2,7 @@ word = ['L', 'E', 'B', 'R', 'O', 'S']
 
 words = str(input())
 
-print(word.index(words))
+if words in word:
+    print(word.index(words))
+else:
+    print("None")
