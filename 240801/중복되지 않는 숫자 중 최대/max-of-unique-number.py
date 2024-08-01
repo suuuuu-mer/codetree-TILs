@@ -1,7 +1,6 @@
 n = int(input())
 nums = list(map(int, input().split()))
 
-max_val = 0
 max_list = []
 ori_list = []
 
