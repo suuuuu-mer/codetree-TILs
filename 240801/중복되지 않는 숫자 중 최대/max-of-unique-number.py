@@ -12,4 +12,7 @@ for i in nums:
             ori_list.append(i)
             max_list.remove(i)
 
-print(max(max_list))
+if max_list is None:
+    print(-1)
+else:
+    print(max(max_list))
