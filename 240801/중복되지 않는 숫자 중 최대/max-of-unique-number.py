@@ -1,18 +1,15 @@
 n = int(input())
 nums = list(map(int, input().split()))
 
-max_list = []
-ori_list = []
+max_num = -1
 
-for i in nums:
-    if i not in max_list:
-        max_list.append(i)
-    else:
-        if i not in ori_list:
-            ori_list.append(i)
-            max_list.remove(i)
+for curr_num in nums:
+    if max_num < curr_num:
+        count = 0
+        for elem in nums:
+            if elem == curr_num:
+                count += 1
+        if count == 1:
+            max_num = curr_num
 
-if max_list is None:
-    print(-1)
-else:
-    print(max(max_list))
+print(max_num)
