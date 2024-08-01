@@ -2,11 +2,15 @@ n = int(input())
 nums = list(map(int, input().split()))
 
 max_val = 0
+max_list = []
+ori_list = []
 
 for i in nums:
-    if i == max_val:
-        max_val = -1
-    elif i > max_val:
-        max_val = i
+    if i not in max_list:
+        max_list.append(i)
+    else:
+        if i not in ori_list:
+            ori_list.append(i)
+            max_list.remove(i)
 
-print(max_val)
+print(max(max_list))
