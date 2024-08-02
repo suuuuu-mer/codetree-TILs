@@ -1,4 +1,7 @@
 string = list(map(str, input().split()))
+new = []
 
 for i in string:
-    print(i, end="")
+    new += i
+
+print(len(new))
