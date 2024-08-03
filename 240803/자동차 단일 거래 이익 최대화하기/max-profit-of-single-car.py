@@ -7,7 +7,7 @@ i_val = 0
 for i in range(n):
     if a[i] < min_val:
         min_val = a[i]
-        i_val += i
+        i_val = i
 
 max_val = 0
 
