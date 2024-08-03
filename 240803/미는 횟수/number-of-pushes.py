@@ -1,18 +1,23 @@
 a = input()
 b = input()
 
-leng = len(a)
-
-count = 0
-
-for _ in range(leng):
-    if a == b:
-        count += 1
-        break
-    else:
-        a = a[-1] + a[:-1]
-
-if count == 0:
+if len(a) != len(b):
     print(-1)
+
 else:
-    print(count)
+    n = 0
+    leng = len(a)
+    flag = -1
+    
+    for i in range(leng):
+        a = a[-1] + a[:-1]
+        n += 1
+        
+        if a == b:
+            flag = 1
+            break
+
+    if flag == 1:
+        print(n)
+    else:
+        print(-1)
