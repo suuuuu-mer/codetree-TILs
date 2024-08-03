@@ -18,6 +18,6 @@ for j in range(i_val + 1, n):
 sub = max_val - min_val
 
 if max_val == 0:
-    print(0)
+    print("0")
 else:
     print(sub)
