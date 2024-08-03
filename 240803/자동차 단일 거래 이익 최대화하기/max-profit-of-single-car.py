@@ -1,23 +1,23 @@
 n = int(input())
-a = list(map(int, input().split()))
+arr = list(map(int, input().split()))
 
-min_val = a[0]
-i_val = 0
+prev_min_idx = 0 
+min_idx = 0
 
-for i in range(n):
-    if a[i] < min_val:
-        min_val = a[i]
-        i_val = i
+for i in range(prev_min_idx, n):
+    if arr[i] < arr[min_idx]:
+        min_idx = i
 
-max_val = 0
+    prev_min_idx = min_idx
 
-for j in range(i_val + 1, n):
-    if a[j] > max_val:
-        max_val = a[j]
+max_idx = min_idx
+for j in range(prev_min_idx, n):
+    if arr[max_idx] < arr[j]:
+        max_idx = j
+    
+    prev_min_idx = max_idx
 
-sub = max_val - min_val
-
-if max_val == 0:
+if min_idx == n - 1:
     print("0")
 else:
-    print(sub)
+    print(arr[max_idx] - arr[min_idx])
